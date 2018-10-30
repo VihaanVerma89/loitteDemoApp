@@ -1,10 +1,17 @@
 package com.lottie.demo
 
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.Window
+import android.widget.TextView
+import com.lottie.demo.R.id.heading1TV
 import kotlinx.android.synthetic.main.activity_main.*
+import android.view.animation.DecelerateInterpolator
+
+
 
 class MainActivity : AppCompatActivity() , SwipeListener{
     val TAG = MainActivity@this.javaClass.simpleName
@@ -17,7 +24,13 @@ class MainActivity : AppCompatActivity() , SwipeListener{
     }
 
     private fun init() {
+        initAnimationSet()
         initSwipeListener()
+    }
+
+    private lateinit var animatorSet: AnimatorSet
+    private fun initAnimationSet(){
+       animatorSet = AnimatorSet()
     }
 
     private fun hideActionbar() {
@@ -40,6 +53,7 @@ class MainActivity : AppCompatActivity() , SwipeListener{
         {
             swipes++
         }
+        screen1EnterAnim()
     }
 
     override fun onSwipeRight() {
@@ -61,7 +75,14 @@ class MainActivity : AppCompatActivity() , SwipeListener{
     }
 
     fun screen1EnterAnim(){
-
+        val view = findViewById<TextView>(R.id.heading1TV)
+        animatorSet.playTogether(
+                ObjectAnimator.ofFloat(view, "alpha", 0F, 1F),
+                ObjectAnimator.ofFloat(view, "translationX", 800F, 0F)
+        )
+        animatorSet.interpolator = DecelerateInterpolator()
+        animatorSet.setDuration(600);
+        animatorSet.start()
     }
 
     fun screen1ExitAnim(){
