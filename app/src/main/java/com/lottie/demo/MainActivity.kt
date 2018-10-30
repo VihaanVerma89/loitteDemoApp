@@ -10,11 +10,11 @@ import android.widget.TextView
 import com.lottie.demo.R.id.heading1TV
 import kotlinx.android.synthetic.main.activity_main.*
 import android.view.animation.DecelerateInterpolator
+import android.widget.ImageView
 
 
-
-class MainActivity : AppCompatActivity() , SwipeListener{
-    val TAG = MainActivity@this.javaClass.simpleName
+class MainActivity : AppCompatActivity(), SwipeListener {
+    val TAG = MainActivity@ this.javaClass.simpleName
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() , SwipeListener{
     }
 
     private lateinit var animatorSet: AnimatorSet
-    private fun initAnimationSet(){
-       animatorSet = AnimatorSet()
+    private fun initAnimationSet() {
+        animatorSet = AnimatorSet()
     }
 
     private fun hideActionbar() {
@@ -46,11 +46,10 @@ class MainActivity : AppCompatActivity() , SwipeListener{
 
     var swipes = 0
     var maxSwipes = 4
-    var minSwipes=0
+    var minSwipes = 0
     override fun onSwipeLeft() {
         Log.d(TAG, "left swipe")
-        if(swipes<maxSwipes)
-        {
+        if (swipes < maxSwipes) {
             swipes++
         }
         screen1EnterAnim()
@@ -58,8 +57,7 @@ class MainActivity : AppCompatActivity() , SwipeListener{
 
     override fun onSwipeRight() {
         Log.d(TAG, "right swipe")
-        if(swipes>minSwipes)
-        {
+        if (swipes > minSwipes) {
             swipes--
         }
     }
@@ -74,145 +72,64 @@ class MainActivity : AppCompatActivity() , SwipeListener{
         Log.d(TAG, "bottom swipe")
     }
 
-    fun screen1EnterAnim(){
-        val view = findViewById<TextView>(R.id.heading1TV)
+    fun screen1EnterAnim() {
+        val userIV = findViewById<ImageView>(R.id.introUserIV)
+        val learnAndroidPracticeIV = findViewById<ImageView>(R.id.mobileContentLearnAndPracticeIV)
+        val heading1 = findViewById<TextView>(R.id.heading1TV)
+        val desc1 = findViewById<TextView>(R.id.desc1TV)
         animatorSet.playTogether(
-                ObjectAnimator.ofFloat(view, "alpha", 0F, 1F),
-                ObjectAnimator.ofFloat(view, "translationX", 800F, 0F)
+
+
+                ObjectAnimator.ofFloat(userIV, "alpha", 0F, 1F),
+                ObjectAnimator.ofFloat(userIV, "translationX", -100F, 0F),
+
+                ObjectAnimator.ofFloat(learnAndroidPracticeIV, "alpha", 0F, 1F),
+                ObjectAnimator.ofFloat(learnAndroidPracticeIV, "translationY", 20F, 0F),
+                ObjectAnimator.ofFloat(desc1, "alpha", 0F, 1F),
+                ObjectAnimator.ofFloat(desc1, "translationX", 800F, 0F)
         )
         animatorSet.interpolator = DecelerateInterpolator()
-        animatorSet.setDuration(600);
+        animatorSet.setDuration(300);
         animatorSet.start()
-    }
 
-    fun screen1ExitAnim(){
-
-    }
-
-    fun screen2EnterAnim(){
-
-    }
-
-    fun screen2ExitAnim(){
+        var set = AnimatorSet()
+        set.playTogether(
+                ObjectAnimator.ofFloat(heading1, "alpha", 0F, 1F),
+                ObjectAnimator.ofFloat(heading1, "translationX", 800F, 0F)
+        )
+        set.interpolator = DecelerateInterpolator()
+        set.setDuration(600);
+        set.start()
 
     }
 
-    fun screen3EnterAnim(){
+    fun screen1ExitAnim() {
 
     }
 
-    fun screen3ExitAnim(){
+    fun screen2EnterAnim() {
 
     }
 
-    fun screen4EnterAnim(){
+    fun screen2ExitAnim() {
 
     }
 
-    fun screen4ExitAnim(){
+    fun screen3EnterAnim() {
 
     }
 
+    fun screen3ExitAnim() {
 
+    }
 
+    fun screen4EnterAnim() {
 
+    }
 
+    fun screen4ExitAnim() {
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    }
 
 
 }
