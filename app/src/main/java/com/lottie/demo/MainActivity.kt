@@ -31,16 +31,23 @@ class MainActivity : AppCompatActivity() , SwipeListener{
         rootCL.setOnTouchListener(listener)
     }
 
-    var position = 0;
+    var swipes = 0
+    var maxSwipes = 4
+    var minSwipes=0
     override fun onSwipeLeft() {
         Log.d(TAG, "left swipe")
-        if(position >0)
+        if(swipes<maxSwipes)
         {
+            swipes++
         }
     }
 
     override fun onSwipeRight() {
         Log.d(TAG, "right swipe")
+        if(swipes>minSwipes)
+        {
+            swipes--
+        }
     }
 
     override fun onSwipeTop() {
@@ -52,6 +59,139 @@ class MainActivity : AppCompatActivity() , SwipeListener{
 
         Log.d(TAG, "bottom swipe")
     }
+
+    fun screen1EnterAnim(){
+
+    }
+
+    fun screen1ExitAnim(){
+
+    }
+
+    fun screen2EnterAnim(){
+
+    }
+
+    fun screen2ExitAnim(){
+
+    }
+
+    fun screen3EnterAnim(){
+
+    }
+
+    fun screen3ExitAnim(){
+
+    }
+
+    fun screen4EnterAnim(){
+
+    }
+
+    fun screen4ExitAnim(){
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 }
