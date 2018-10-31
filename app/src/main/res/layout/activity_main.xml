@@ -8,12 +8,127 @@
     tools:context=".MainActivity">
 
     <android.support.constraint.ConstraintLayout
+        android:id="@+id/screen0CL"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        >
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/intro_user_with_laptop" />
+
+
+
+        <!--android:text="Exam Preparation Simplified asdfasdf"-->
+        <TextView
+            android:id="@+id/heading0TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="Exam Preparation Simplified"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/desc0TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:gravity="center"
+            android:text="Trusted by 50 Lakh students"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading0TV" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:background="#e0e2e4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/desc0TV" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Banking"
+            tools:layout_editor_absoluteX="78dp"
+            tools:layout_editor_absoluteY="425dp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="10dp"
+            android:background="#abc" />
+
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/testbookWhiteIV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/intro_testbook_logo_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        />
+
+    <ImageView
+        android:id="@+id/testbookBlueIV"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:src="@drawable/intro_testbook_logo_blue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/screen1CL"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/testbookBlueIV">
 
         <ImageView
             android:id="@+id/introMobileLeftLeafIV"
@@ -44,39 +159,41 @@
 
         <ImageView
             android:id="@+id/introMobileIV"
-            android:layout_width="256dp"
-            android:layout_height="247dp"
+            android:layout_width="331dp"
+            android:layout_height="302dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:src="@drawable/intro_mobile"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/introUserIV"
             android:layout_width="97dp"
-            android:layout_height="163dp"
+            android:layout_height="196dp"
+            android:layout_marginStart="16dp"
             android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             android:src="@drawable/intro_user"
             app:layout_constraintBottom_toTopOf="@+id/heading1TV"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/introMobileIV"
-            app:layout_constraintVertical_bias="0.84" />
+            app:layout_constraintVertical_bias="0.816" />
 
 
         <ImageView
             android:id="@+id/mobileContentLearnAndPracticeIV"
-            android:layout_width="94dp"
-            android:layout_height="179dp"
+            android:layout_width="108dp"
+            android:layout_height="201dp"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="88dp"
+            android:layout_marginTop="36dp"
             android:layout_marginEnd="8dp"
             android:src="@drawable/intro_mobile_learn_practice"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.475"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -88,6 +205,9 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:text="Learn and Practice"
+            android:textColor="@android:color/black"
+            android:textSize="24dp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
@@ -108,4 +228,6 @@
             app:layout_constraintTop_toBottomOf="@+id/heading1TV" />
 
     </android.support.constraint.ConstraintLayout>
+
+
 </android.support.constraint.ConstraintLayout>
