@@ -1,4 +1,4 @@
-package com.lottie.demo
+package com.lottie.demo.SwipTest
 
 interface SwipeListener {
     fun onSwipeLeft()

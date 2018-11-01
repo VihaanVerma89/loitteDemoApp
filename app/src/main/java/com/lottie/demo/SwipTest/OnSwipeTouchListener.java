@@ -1,7 +1,6 @@
-package com.lottie.demo;
+package com.lottie.demo.SwipTest;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.SimpleOnGestureListener;
 import android.view.MotionEvent;

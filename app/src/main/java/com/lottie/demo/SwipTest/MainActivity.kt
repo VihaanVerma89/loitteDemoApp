@@ -1,4 +1,4 @@
-package com.lottie.demo
+package com.lottie.demo.SwipTest
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
@@ -7,10 +7,10 @@ import android.os.Bundle
 import android.util.Log
 import android.view.Window
 import android.widget.TextView
-import com.lottie.demo.R.id.heading1TV
 import kotlinx.android.synthetic.main.activity_main.*
 import android.view.animation.DecelerateInterpolator
 import android.widget.ImageView
+import com.lottie.demo.R
 
 
 class MainActivity : AppCompatActivity(), SwipeListener {
