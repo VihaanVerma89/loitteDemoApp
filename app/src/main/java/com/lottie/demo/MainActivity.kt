@@ -84,7 +84,7 @@ class MainActivity : AppCompatActivity(), SwipeListener {
                 ObjectAnimator.ofFloat(userIV, "translationX", -100F, 0F),
 
                 ObjectAnimator.ofFloat(learnAndroidPracticeIV, "alpha", 0F, 1F),
-                ObjectAnimator.ofFloat(learnAndroidPracticeIV, "translationY", 20F, 0F),
+                ObjectAnimator.ofFloat(learnAndroidPracticeIV, "translationY", 100F, 0F),
                 ObjectAnimator.ofFloat(desc1, "alpha", 0F, 1F),
                 ObjectAnimator.ofFloat(desc1, "translationX", 800F, 0F)
         )
