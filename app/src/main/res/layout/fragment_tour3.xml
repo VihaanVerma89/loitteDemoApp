@@ -1,12 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:layout_editor_absoluteY="81dp">
 
-    <TextView
-        android:text="fragment 3"
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v10"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".10" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v15"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".15" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v20"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".20" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v30"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".30" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v33"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".33" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v35"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".35" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v38"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".38" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v40"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent="0.40145984" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v50"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".50" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v60"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".60" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v70"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".70" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v80"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".80" />-->
+
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/v90"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--app:layout_constraintGuide_percent=".90" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/h15"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent=".15" />-->
+
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/h20"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent=".20" />-->
+
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/h25"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent=".25" />-->
+
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/h30"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent=".30" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/h40"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent=".40" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/h50"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent=".50" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/h55"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent=".55" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/h58"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent=".58" />-->
+
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/h60"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent="0.60" />-->
+
+    <!--<android.support.constraint.Guideline-->
+        <!--android:id="@+id/h80"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal"-->
+        <!--app:layout_constraintGuide_percent="0.8" />-->
+
+
+    <!--<ImageView-->
+        <!--android:id="@+id/introMobileIV"-->
+        <!--android:layout_width="320dp"-->
+        <!--android:layout_height="204dp"-->
+        <!--android:src="@drawable/intro_mobile"-->
+        <!--tools:layout_editor_absoluteY="67dp" />-->
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="87dp"
+        android:layout_height="60dp"
+        android:src="@drawable/intro_analytics_left"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="144dp" />
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="52dp"
+        android:src="@drawable/intro_analytics_right"
+        tools:layout_editor_absoluteX="152dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </android.support.constraint.ConstraintLayout>

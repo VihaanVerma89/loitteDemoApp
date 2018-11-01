@@ -38,7 +38,7 @@ class ViewPagerActivity : AppCompatActivity(){
     private var fragments : ArrayList<Fragment> = arrayListOf()
     private fun getFragments(): ArrayList<Fragment> {
         fragments.clear()
-        fragments.add(Tour1Fragment())
+//        fragments.add(Tour1Fragment())
         fragments.add(Tour2Fragment())
         fragments.add(Tour3Fragment())
         fragments.add(Tour4Fragment())
